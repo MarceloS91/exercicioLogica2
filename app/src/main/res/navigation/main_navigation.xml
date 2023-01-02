@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/firstScreen">
+
+    <fragment
+        android:id="@+id/firstScreen"
+        android:name="com.example.exercicioagendamento.FirstScreen"
+        android:label="FirstScreen"
+        tools:layout="@layout/first_screen">
+        <action
+            android:id="@+id/actionTela1ParaTela2"
+            app:destination="@id/secondScreen" />
+        <action
+            android:id="@+id/actionTela1ParaTela3"
+            app:destination="@id/thirtScreem" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondScreen"
+        android:name="com.example.exercicioagendamento.SecondScreen"
+        android:label="fragment_second_screen"
+        tools:layout="@layout/fragment_second_screen" >
+        <action
+            android:id="@+id/actionTela2ParaTela4"
+            app:destination="@id/fifthScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirtScreem"
+        android:name="com.example.exercicioagendamento.ThirtScreen"
+        android:label="fragment_thirt_screem"
+        tools:layout="@layout/fragment_thirt_screen" >
+        <action
+            android:id="@+id/actionTela3ParaTela4"
+            app:destination="@id/fifthScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/fifthScreen"
+        android:name="com.example.exercicioagendamento.FifthScreen"
+        android:label="fragment_fifth_screen"
+        tools:layout="@layout/fragment_fifth_screen" >
+        <action
+            android:id="@+id/actionTela4ParaEasy"
+            app:destination="@id/easyCadastro" />
+        <action
+            android:id="@+id/actionTela4ParaMedium"
+            app:destination="@id/mediumCadastro" />
+        <action
+            android:id="@+id/actionTela4ParaHard"
+            app:destination="@id/hardCadastro" />
+        <argument
+            android:name="nickname"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/easyCadastro"
+        android:name="com.example.exercicioagendamento.EasyCadastro"
+        android:label="fragment_easy_cadastro"
+        tools:layout="@layout/fragment_easy_cadastro" >
+        <action
+            android:id="@+id/actionEasyParaAgendamento"
+            app:destination="@id/screenAgendamento" />
+    </fragment>
+    <fragment
+        android:id="@+id/mediumCadastro"
+        android:name="com.example.exercicioagendamento.MediumCadastro"
+        android:label="fragment_medium_cadastro"
+        tools:layout="@layout/fragment_medium_cadastro" >
+        <action
+            android:id="@+id/actionMediumParaAgendamento"
+            app:destination="@id/screenAgendamento" />
+    </fragment>
+    <fragment
+        android:id="@+id/hardCadastro"
+        android:name="com.example.exercicioagendamento.HardCadastro"
+        android:label="fragment_hard_cadastro"
+        tools:layout="@layout/fragment_hard_cadastro" >
+        <action
+            android:id="@+id/actionHardParaAgendamento"
+            app:destination="@id/screenAgendamento" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenAgendamento"
+        android:name="com.example.exercicioagendamento.ScreenAgendamento"
+        android:label="fragment_screen_agendamento"
+        tools:layout="@layout/fragment_screen_agendamento" />
+</navigation>
