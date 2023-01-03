@@ -6,6 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-class ScreenAgendamento : Fragment(R.layout.fragment_screen_agendamento) {
+class AgendamentoConcluido : Fragment(R.layout.fragment_agendamento_concluido) {
 
 }

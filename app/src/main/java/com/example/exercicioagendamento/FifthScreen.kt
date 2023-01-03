@@ -25,7 +25,6 @@ class FifthScreen : Fragment(R.layout.fragment_fifth_screen) {
         view.findViewById<ImageView>(R.id.buttonEasy).setOnClickListener{
             findNavController().navigate(R.id.actionTela4ParaEasy)
         }
-
         view.findViewById<ImageView>(R.id.buttonMedium).setOnClickListener{
             findNavController().navigate(R.id.actionTela4ParaMedium)
         }

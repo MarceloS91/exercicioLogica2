@@ -68,8 +68,8 @@
         android:label="fragment_medium_cadastro"
         tools:layout="@layout/fragment_medium_cadastro" >
         <action
-            android:id="@+id/actionMediumParaAgendamento"
-            app:destination="@id/screenAgendamento" />
+            android:id="@+id/action_mediumCadastro_to_mediumAgendamento"
+            app:destination="@id/mediumAgendamento2" />
     </fragment>
     <fragment
         android:id="@+id/hardCadastro"
@@ -77,12 +77,85 @@
         android:label="fragment_hard_cadastro"
         tools:layout="@layout/fragment_hard_cadastro" >
         <action
-            android:id="@+id/actionHardParaAgendamento"
-            app:destination="@id/screenAgendamento" />
+            android:id="@+id/action_hardCadastro_to_hardAgendamento"
+            app:destination="@id/hardAgendamento" />
     </fragment>
     <fragment
         android:id="@+id/screenAgendamento"
-        android:name="com.example.exercicioagendamento.ScreenAgendamento"
+        android:name="com.example.exercicioagendamento.EasyAgendamento"
         android:label="fragment_screen_agendamento"
-        tools:layout="@layout/fragment_screen_agendamento" />
+        tools:layout="@layout/fragment_easy_agendamento" >
+        <argument
+            android:name="nome"
+            app:argType="string" />
+        <argument
+            android:name="endereco"
+            app:argType="string" />
+
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="time"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_screenAgendamento_to_agendamentoConcluido"
+            app:destination="@id/agendamentoConcluido" />
+    </fragment>
+    <fragment
+        android:id="@+id/mediumAgendamento2"
+        android:name="com.example.exercicioagendamento.MediumAgendamento"
+        android:label="fragment_medium_agendamento"
+        tools:layout="@layout/fragment_medium_agendamento" >
+        <action
+            android:id="@+id/action_mediumAgendamento2_to_agendamentoConcluido"
+            app:destination="@id/agendamentoConcluido" />
+        <argument
+            android:name="nome"
+            app:argType="string" />
+        <argument
+            android:name="endereco"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="time"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/hardAgendamento"
+        android:name="com.example.exercicioagendamento.HardAgendamento"
+        android:label="fragment_hard_agendamento"
+        tools:layout="@layout/fragment_hard_agendamento" >
+        <action
+            android:id="@+id/action_hardAgendamento_to_agendamentoConcluido"
+            app:destination="@id/agendamentoConcluido" />
+        <argument
+            android:name="nome"
+            app:argType="string" />
+        <argument
+            android:name="endereco"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="time"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/agendamentoConcluido"
+        android:name="com.example.exercicioagendamento.AgendamentoConcluido"
+        android:label="fragment_agendamento_concluido"
+        tools:layout="@layout/fragment_agendamento_concluido" />
 </navigation>

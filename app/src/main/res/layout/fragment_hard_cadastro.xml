@@ -8,7 +8,7 @@
 
 
     <EditText
-        android:id="@+id/editTextTextPersonName17"
+        android:id="@+id/hardEndereco"
         android:layout_width="347dp"
         android:layout_height="52dp"
         android:background="@drawable/barra"
@@ -81,7 +81,7 @@
     </RadioGroup>
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/hardNome"
         android:layout_width="347dp"
         android:layout_height="52dp"
         android:background="@drawable/barra"
@@ -96,7 +96,7 @@
         app:layout_constraintVertical_bias="0.278" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/hardData"
         android:layout_width="131dp"
         android:layout_height="41dp"
         android:background="@drawable/barra"
@@ -112,7 +112,7 @@
         app:layout_constraintVertical_bias="0.517" />
 
     <EditText
-        android:id="@+id/editTextTime"
+        android:id="@+id/hardHorario"
         android:layout_width="128dp"
         android:layout_height="44dp"
         android:background="@drawable/barra"
@@ -128,7 +128,7 @@
         app:layout_constraintVertical_bias="0.631" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName16"
+        android:id="@+id/hardDescricao"
         android:layout_width="343dp"
         android:layout_height="92dp"
         android:background="@color/white"
@@ -145,7 +145,7 @@
 
     <Button
         android:backgroundTint="@color/mediumBlue"
-        android:id="@+id/button3"
+        android:id="@+id/buttonHardAgendar"
         android:layout_width="160dp"
         android:layout_height="70dp"
         android:text="Agendar!"
