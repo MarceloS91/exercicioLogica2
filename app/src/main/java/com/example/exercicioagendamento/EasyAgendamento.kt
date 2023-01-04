@@ -2,8 +2,11 @@ package com.example.exercicioagendamento
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
+import android.widget.RadioButton
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 
 class EasyAgendamento : Fragment(R.layout.fragment_easy_agendamento) {
@@ -23,8 +26,7 @@ class EasyAgendamento : Fragment(R.layout.fragment_easy_agendamento) {
 
         var descricaoSchedule = view.findViewById<TextView>(R.id.descricaoEasy)
 
-        /*var radioSchedule = view.findViewById<RadioButton>(R.id.radioButtonEasy)nomeSchedule*/
-
+        var radioSchedule = view.findViewById<TextView>(R.id.textRadioButton)
 
 //        nomeSchedule.text = args.nome as Editable
 
@@ -34,7 +36,12 @@ class EasyAgendamento : Fragment(R.layout.fragment_easy_agendamento) {
         timeSchedule.setText(args.time)
         descricaoSchedule.setText(args.description)
 
+
 /*        radioSchedule.setText(args.radio)*/
+
+        view.findViewById<Button>(R.id.buttonEasyConcluido).setOnClickListener{
+            findNavController().navigate(R.id.actionEasyParaAgendamentoConcluido)
+        }
     }
 }
 

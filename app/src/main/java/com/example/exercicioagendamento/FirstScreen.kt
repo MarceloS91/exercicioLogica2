@@ -8,10 +8,10 @@ import android.widget.Button
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.exercicioagendamento.databinding.ActivityMainBinding
-import com.example.exercicioagendamento.databinding.ActivityMainBinding.inflate
+
 
 class FirstScreen : Fragment(R.layout.first_screen) {
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 

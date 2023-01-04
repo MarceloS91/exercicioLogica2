@@ -7,21 +7,29 @@
     android:background="@drawable/fundobruxa">
 
 
-    <TextView
-        android:id="@+id/descricaoText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Seus agendamentos:"
-        android:textColor="@color/white"
-        android:textSize="30sp"
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/buttonAgendamentoConcluido"
+        android:layout_width="174dp"
+        android:layout_height="251dp"
+        android:layout_marginBottom="292dp"
+        android:src="@drawable/verified"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.06" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
-
-
+    <TextView
+        android:id="@+id/textViewAgendamentoConcluido"
+        android:layout_width="264dp"
+        android:layout_height="97dp"
+        android:layout_marginBottom="192dp"
+        android:text="Agendamento concluído!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

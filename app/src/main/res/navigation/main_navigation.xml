@@ -102,8 +102,9 @@
             android:name="description"
             app:argType="string" />
         <action
-            android:id="@+id/action_screenAgendamento_to_agendamentoConcluido"
+            android:id="@+id/actionEasyParaAgendamentoConcluido"
             app:destination="@id/agendamentoConcluido" />
+
     </fragment>
     <fragment
         android:id="@+id/mediumAgendamento2"
@@ -157,5 +158,14 @@
         android:id="@+id/agendamentoConcluido"
         android:name="com.example.exercicioagendamento.AgendamentoConcluido"
         android:label="fragment_agendamento_concluido"
-        tools:layout="@layout/fragment_agendamento_concluido" />
+        tools:layout="@layout/fragment_agendamento_concluido" >
+        <action
+            android:id="@+id/actionAgendamentoConcluidoTohistoricoAgendamentos"
+            app:destination="@id/historicoAgendamentos" />
+    </fragment>
+    <fragment
+        android:id="@+id/historicoAgendamentos"
+        android:name="com.example.exercicioagendamento.HistoricoAgendamentos"
+        android:label="fragment_historico_agendamentos"
+        tools:layout="@layout/fragment_historico_agendamentos" />
 </navigation>
