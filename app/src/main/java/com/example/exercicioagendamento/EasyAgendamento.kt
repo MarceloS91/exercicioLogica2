@@ -26,7 +26,6 @@ class EasyAgendamento : Fragment(R.layout.fragment_easy_agendamento) {
 
         var descricaoSchedule = view.findViewById<TextView>(R.id.descricaoEasy)
 
-        var radioSchedule = view.findViewById<TextView>(R.id.textRadioButton)
 
 //        nomeSchedule.text = args.nome as Editable
 

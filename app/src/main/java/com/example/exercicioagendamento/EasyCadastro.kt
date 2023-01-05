@@ -29,8 +29,6 @@ class EasyCadastro : Fragment(R.layout.fragment_easy_cadastro) {
 
         val description = view.findViewById<EditText>(R.id.editTextEasyDescricao)
 
-        /*val radioButton = view.findViewById<RadioButton>(R.id.radioButtonGrade)*/
-
         view.findViewById<Button>(R.id.buttonEasyAgendar).setOnClickListener {
             val action = EasyCadastroDirections.actionEasyParaAgendamento(
                 "${nome.text}",
@@ -38,39 +36,35 @@ class EasyCadastro : Fragment(R.layout.fragment_easy_cadastro) {
                 "${data.text}",
                "${time.text}",
                 "${description.text}",
-
-                /*"${radioButton.}"*/
-
             )
-            when {
-                view.findViewById<RadioButton>(R.id.radioButtonEasyManha).isChecked ->
-                    view.findViewById<Button>(R.id.buttonEasyAgendar).setOnClickListener {
-                        view.findViewById<TextView>(R.id.textRadioButton).setText("Manhã")
-                    }
-                  }
-
-         /*   fun (){
-                val periodo = view.findViewById<RadioGroup>(R.id.radioButtonGrade)
-
-                when {
-                    view.findViewById<RadioButton>(R.id.radioButtonEasyManha).isChecked ->
-                       view.findViewById<Button>(R.id.buttonEasyAgendar).setOnClickListener {
-                           view.findViewById<TextView>(R.id.textRadioButton).setText("Manhã")
-                  *//*         view.findViewById<TextView>(R.id.textRadioButton).text = periodo*//*
-                       }
-                    }
-                 }*/
 
             findNavController().navigate(action)
 
         }
     }
-
-    fun getCheckedItemRadioGroup() : Int {
-        var idChecked = radioButtonGrade.checkedRadioButtonId
-        return idChecked
-    }
 }
+
+/*  when {
+          view.findViewById<RadioButton>(R.id.radioButtonEasyManha).isChecked ->
+              view.findViewById<Button>(R.id.buttonEasyAgendar).setOnClickListener {
+                  view.findViewById<TextView>(R.id.textRadioButton).setText("Manhã")
+              }
+            }*/
+
+/*   fun (){
+       val periodo = view.findViewById<RadioGroup>(R.id.radioButtonGrade)
+
+       when {
+           view.findViewById<RadioButton>(R.id.radioButtonEasyManha).isChecked ->
+              view.findViewById<Button>(R.id.buttonEasyAgendar).setOnClickListener {
+                  view.findViewById<TextView>(R.id.textRadioButton).setText("Manhã")
+         *//*         view.findViewById<TextView>(R.id.textRadioButton).text = periodo*//*
+                       }
+                    }
+                 }*/
+
+/*"${radioButton.}"*/
+
 
 
 
